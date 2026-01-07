@@ -2,12 +2,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 20px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     color: #333;
     background: #f5f7fa;
+    padding: 20px;
 }
 
 /* ===== Hero / Banner Section ===== */
@@ -85,7 +85,7 @@ section {
 .project img {
     display: block;
     margin-bottom: 10px;
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 5px;
 }
 
@@ -109,6 +109,48 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
+}
+
+/* ===== Skills Section with Icons ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+    width: 150px;
+}
+
+.skill img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+/* ===== Contact Form ===== */
+form {
+    background: #eef2f7;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 10px;
 }
 
 /* ===== Responsive / Mobile-Friendly ===== */
@@ -140,25 +182,4 @@ footer {
     a.button {
         padding: 8px 20px;
     }
-}
-/* ===== Contact Form ===== */
-form {
-    background: #eef2f7;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: auto;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-form button {
-    margin-top: 10px;
 }
