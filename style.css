@@ -69,3 +69,31 @@ a.button {
 a.button:hover {
     background: #0a2540;
 }
+/* Buttons for CTA links */
+a.button {
+    display: inline-block;
+    background: #123b6f;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+a.button:hover {
+    background: #0a2540;
+}
+
+/* Add spacing between sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Make images in projects look neat */
+.project img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+}
