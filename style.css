@@ -141,3 +141,24 @@ footer {
         padding: 8px 20px;
     }
 }
+/* ===== Contact Form ===== */
+form {
+    background: #eef2f7;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 10px;
+}
