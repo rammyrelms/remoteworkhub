@@ -1,3 +1,4 @@
+/* ===== Body & General Layout ===== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,13 +7,33 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #333;
+    background: #f5f7fa;
 }
 
-header {
+/* ===== Hero / Banner Section ===== */
+.hero {
+    position: relative;
     text-align: center;
+    color: white;
     margin-bottom: 40px;
 }
 
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(60%);
+    border-radius: 5px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ===== Headings ===== */
 h1, h2 {
     color: #123b6f;
 }
@@ -21,6 +42,7 @@ ul {
     list-style-type: square;
 }
 
+/* ===== Buttons ===== */
 a.button {
     display: inline-block;
     background: #123b6f;
@@ -36,10 +58,13 @@ a.button:hover {
     background: #0a2540;
 }
 
+/* ===== Sections ===== */
 section {
     margin-bottom: 40px;
+    padding: 10px;
 }
 
+/* ===== Project Cards ===== */
 .project {
     background: #eef2f7;
     padding: 20px;
@@ -64,6 +89,7 @@ section {
     border-radius: 5px;
 }
 
+/* ===== Testimonials ===== */
 .testimonial {
     background: #f9f9f9;
     border-left: 5px solid #0a2540;
@@ -77,24 +103,41 @@ section {
     margin: 0;
     color: #333;
 }
-.hero {
-    position: relative;
+
+/* ===== Footer ===== */
+footer {
     text-align: center;
-    color: white;
-    margin-bottom: 40px;
+    padding: 20px 0;
+    font-size: 0.9em;
 }
 
-.hero-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    filter: brightness(60%);
-    border-radius: 5px;
+/* ===== Responsive / Mobile-Friendly ===== */
+@media (max-width: 768px) {
+    .hero-text {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body {
+        margin: 10px;
+    }
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    a.button {
+        padding: 8px 20px;
+    }
 }
